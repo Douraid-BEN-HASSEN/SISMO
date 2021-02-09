@@ -1,4 +1,4 @@
-# SISMO
+# SISMO (Projet BTS SNIR 2017)
 # === Maquette du site ===
 Wordpress
 # === Stockage des données ===
