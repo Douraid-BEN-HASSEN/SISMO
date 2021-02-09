@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/series-label.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+	<script src="CChart.js"></script>
+	<script src="CSeries.js"></script>
+	<script src="CWebservice.js"></script>
+
+</head>
+<body>
+
+</body>
+</html>
+ 
+
+<div id="container">
+
+</div>
+<script type="text/javascript">
+
+// Déclaration d'un objet CChart ( corps graphique ) 
+var chart = new CChart('container', 'Sismographe', 'subtitle', 900, 450); 
+
+// Déclaration des objets CSeries ( courbes )
+var serie_0 = new CSeries(0, '00:00', 2300, chart.graphique);
+var serie_1 = new CSeries(1, '01:00', 2200, chart.graphique);
+var serie_2 = new CSeries(2, '02:00', 2100, chart.graphique);
+var serie_3 = new CSeries(3, '03:00', 2000, chart.graphique);
+var serie_4 = new CSeries(4, '04:00', 1900, chart.graphique);
+var serie_5 = new CSeries(5, '05:00', 1800, chart.graphique);
+var serie_6 = new CSeries(6, '06:00', 1700, chart.graphique);
+var serie_7 = new CSeries(7, '07:00', 1600, chart.graphique);
+var serie_8 = new CSeries(8, '08:00', 1500, chart.graphique);
+var serie_9 = new CSeries(9, '09:00', 1400, chart.graphique);
+var serie_10 = new CSeries(10, '10:00', 1300, chart.graphique);
+var serie_11 = new CSeries(11, '11:00', 1200, chart.graphique);
+var serie_12 = new CSeries(12, '12:00', 1100, chart.graphique);
+var serie_13 = new CSeries(13, '13:00', 1000, chart.graphique);
+var serie_14 = new CSeries(14, '14:00', 900, chart.graphique);
+var serie_15 = new CSeries(15, '15:00', 800, chart.graphique);
+
+// Déclaration d'un objet CWebservice ( lecteur de points )
+var  webservice_obj = new CWebservice(); 
+var point = [];
+
+chart.addSeries(serie_0);
+chart.addSeries(serie_1);
+chart.addSeries(serie_2);
+chart.addSeries(serie_3);
+chart.addSeries(serie_4);
+chart.addSeries(serie_5);
+chart.addSeries(serie_6);
+chart.addSeries(serie_7);
+chart.addSeries(serie_8);
+chart.addSeries(serie_9);
+chart.addSeries(serie_10);
+chart.addSeries(serie_11);
+chart.addSeries(serie_12);
+chart.addSeries(serie_13);
+chart.addSeries(serie_14);
+chart.addSeries(serie_15);
+
+serie_0.addPoint([0,0,0]);
+serie_1.addPoint([0,0,0]);
+serie_2.addPoint([0,0,0]);
+serie_3.addPoint([0,0,0]);
+serie_4.addPoint([0,0,0]);
+serie_5.addPoint([0,0,0]);
+serie_6.addPoint([0,0,0]);
+serie_7.addPoint([0,0,0]);
+serie_8.addPoint([0,0,0]);
+serie_9.addPoint([0,0,0]);
+serie_10.addPoint([0,0,0]);
+serie_11.addPoint([0,0,0]);
+serie_12.addPoint([0,0,0]);
+serie_13.addPoint([0,0,0]);
+serie_14.addPoint([0,0,0]);
+serie_15.addPoint([0,0,0]);
+
+
+// setInterval(function(){ chart.tes(); }, 1000); // loop
+
+ 
+</script>
