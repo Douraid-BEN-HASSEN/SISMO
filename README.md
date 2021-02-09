@@ -1,9 +1,9 @@
 # SISMO
-=== Maquette du site ===
+# === Maquette du site ===
 Wordpress
-=== Stockage des données ===
+# === Stockage des données ===
 SQL
-=== Lecture des données ===
+# === Lecture des données ===
 PHP
-=== Affichage des données ===
+# === Affichage des données ===
 JS en objet
